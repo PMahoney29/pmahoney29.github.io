@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ /*#4d4dff, #0ECFC2*/
+
 body {
     width: 100%;
     height: 100%;
@@ -26,8 +28,8 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    /*font-family: Lucida Handwriting, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    font-family: cursive, Lucida Handwriting, Montserrat, sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: cursive, Lucida Handwriting, Montserrat, sans-serif;*/
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -47,7 +49,7 @@ p {
 }
 
 a {
-    color: #0ecfc2;
+    color: #4d4dff;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -56,7 +58,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1b8f87;
+    color: #4d4dff;
 }
 
 .light {
@@ -70,8 +72,8 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-weight:bold;
-    /*font-family: Lucida Handwriting, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    font-family: cursive, Montserrat, sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: cursive, Montserrat, sans-serif;*/
     background-color: #000;
 }
 
@@ -96,6 +98,7 @@ a:focus {
 
 .navbar-custom a {
     color: black;
+    font-size: 16px;
     text-shadow: 1px 1px 1px white;
     -webkit-transition: color .5s ease-in-out;
     -moz-transition: color .5s ease-in-out;
@@ -111,7 +114,7 @@ a:focus {
 .navbar-custom .nav li a:hover {
     outline: 0;
     /* color: rgba(255,255,255,.8); */
-    color: #1B8F87;
+    color: #4d4dff;
     background-color: transparent;
 }
 
@@ -130,7 +133,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #1B8F87;
+    color: #4d4dff;
 }
 
 @media(min-width:768px) {
@@ -188,7 +191,7 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
-    color: #1B8F87;
+    color: #4d4dff;
     text-shadow: 3px 3px 2px black;
     font-weight: bold;
 }
@@ -226,7 +229,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #1B8F87;
+    color: #4d4dff;
     background: rgba(255,255,255,.1);
 }
 
@@ -288,9 +291,22 @@ a:focus {
 
 .download-section {
     width: 100%;
-    padding: 50px 0;
     color: #fff;
     background: url(../img/winterBanner.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.projects-section {
+    padding-top: 100px;
+}
+
+.map2-section {
+    width: 100%;
+    color: #fff;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -301,21 +317,28 @@ a:focus {
 #map {
     width: 100%;
     height: 200px;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
+        padding-bottom:0px;
+        margin-bottom:0px;
     }
 
     .download-section {
+        padding: 0px 0;
+        margin-top:0px;
+    }
+
+    .projects-section {
         padding: 100px 0;
     }
 
     #map {
         height: 400px;
-        margin-top: 250px;
+        margin-top: 10px;
     }
 }
 
@@ -330,17 +353,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #0ecfc2;
-    color: #0ecfc2;
+    border: 1px solid #4d4dff;
+    color: #4d4dff;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #0ecfc2;
+    border: 1px solid #4d4dff;
     outline: 0;
     color: #000;
-    background-color: #0ecfc2;
+    background-color: #4d4dff;
 }
 
 ul.banner-social-buttons {
@@ -393,6 +416,10 @@ img::selection {
   width: auto;
   height: 200px;
   max-height: 300px;
+}
+
+.carousel-control {
+    height: 90%;
 }
 
 img::-moz-selection {
