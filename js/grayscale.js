@@ -134,3 +134,4 @@ function init() {
         icon: image
     });
 }
+
