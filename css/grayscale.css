@@ -4,7 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
- /*#4d4dff, #0ECFC2*/
+ /*#4d4dff, #0ECFC2, #e04a0f*/
 
 body {
     width: 100%;
@@ -49,7 +49,7 @@ p {
 }
 
 a {
-    color: #4d4dff;
+    color: #e04a0f;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -58,7 +58,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #4d4dff;
+    color: #e04a0f;
 }
 
 .light {
@@ -79,6 +79,7 @@ a:focus {
 
 .navbar-custom .navbar-brand {
     font-weight: 700;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -98,7 +99,7 @@ a:focus {
 
 .navbar-custom a {
     color: black;
-    font-size: 16px;
+    font-size: 20px;
     text-shadow: 1px 1px 1px white;
     -webkit-transition: color .5s ease-in-out;
     -moz-transition: color .5s ease-in-out;
@@ -114,7 +115,7 @@ a:focus {
 .navbar-custom .nav li a:hover {
     outline: 0;
     /* color: rgba(255,255,255,.8); */
-    color: #4d4dff;
+    color: #e04a0f;
     background-color: transparent;
 }
 
@@ -133,7 +134,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #4d4dff;
+    color: #e04a0f;
 }
 
 @media(min-width:768px) {
@@ -151,16 +152,19 @@ a:focus {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.5);
         background: #000;
+        text-shadow: 0px 0px 0px transparent;
     }
 
     .navbar-custom.top-nav-collapse a {
         color: #fff;
+	font-size: 16px;
         text-shadow: 0px 0px 0px transparent;
     }
 
     .light.light-collapse {
         font-weight: 400;
         color: #fff;
+	font-size: 16px;
         text-shadow: 0px 0px 0px transparent;
     }
 }
@@ -172,7 +176,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/westMonroe.png) no-repeat bottom center scroll;
+    background: url(../img/westMonroe_small.png) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -191,7 +195,7 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
-    color: #4d4dff;
+    color: #e04a0f;
     text-shadow: 3px 3px 2px black;
     font-weight: bold;
 }
@@ -229,7 +233,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #4d4dff;
+    color: #e04a0f;
     background: rgba(255,255,255,.1);
 }
 
@@ -353,17 +357,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #4d4dff;
-    color: #4d4dff;
+    border: 1px solid #e04a0f;
+    color: #e04a0f;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #4d4dff;
+    border: 1px solid #e04a0f;
     outline: 0;
     color: #000;
-    background-color: #4d4dff;
+    background-color: #e04a0f;
 }
 
 ul.banner-social-buttons {
@@ -412,16 +416,6 @@ img::selection {
     background: 0 0;
 }
 
-.heightCarousel img {
-  width: auto;
-  height: 200px;
-  max-height: 300px;
-}
-
-.carousel-control {
-    height: 90%;
-}
-
 img::-moz-selection {
     background: 0 0;
 }
@@ -429,3 +423,4 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
